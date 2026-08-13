@@ -16,7 +16,7 @@
 
 Проекты по анализу и обработке данных.
 
-**Инструменты:** Pandas, Matplotlib, Seaborn, SciPy, Phik.
+**Инструменты:** Pandas, Matplotlib, Seaborn, SciPy, Numpy, Phik.
 
 ### 🗄 [SQL](./SQL/)
 
@@ -47,7 +47,7 @@
 
 ## 🛠️ Используемые технологии
 
-**Python:** Pandas, Matplotlib, Seaborn, SciPy, Phik  
+**Python:** Pandas, Matplotlib, Seaborn, SciPy, Numpy, Phik  
 **SQL:** PostgreSQL  
 **BI:** DataLens  
 **Дополнительно:** Excel, Google Sheets, Git

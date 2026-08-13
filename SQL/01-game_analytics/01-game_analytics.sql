@@ -4,12 +4,12 @@
  * активность игроков при совершении внутриигровых покупок
 */
 -- Исследовательский анализ данных
--- Задача 1. Исследование доли платящих игроков
+-- 1. Исследование доли платящих игроков
 select count(payer), 
        sum(payer), 
        round(avg(payer), 2)
 from fantasy.users; 
--- 1.2. Доля платящих пользователей в разрезе расы персонажа:
+--  Доля платящих пользователей в разрезе расы персонажа:
 select race,
        sum(payer) as total_plaing,
        count(payer) as total_users,
@@ -18,8 +18,8 @@ from fantasy.race as r
 join fantasy.users as u on r.race_id = u.race_id
 group by race
 order by proportion desc;
--- Задача 2. Исследование внутриигровых покупок
--- 2.1. Статистические показатели по полю amount:
+-- 2. Исследование внутриигровых покупок
+-- Статистические показатели по полю amount:
 select 'Все данные' as tabel, 
        count(amount) as total_count,
        sum(amount) as total_sum,
@@ -40,12 +40,12 @@ select 'Только > 0' as tabel,
        stddev(amount) as total_st_deviation
 from fantasy.events
 where amount > 0 and amount is not null;
--- 2.2: Аномальные нулевые покупки:
+-- Аномальные нулевые покупки:
 select count(*) filter (where amount = 0) as zero_count,
        count(*) as total_count,
        round(count(*) filter (where amount = 0)::numeric/count(*), 3)as proportion 
 from fantasy.events 
--- 2.3: Популярные эпические предметы:
+-- Популярные эпические предметы:
 select i.game_items,
        t.item_code,
        count(*) as group_count,
