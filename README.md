@@ -45,12 +45,12 @@
 
 ---
 
-## 🛠️ Используемые технологии
+## 🛠️ Основной стек
 
-**Python:** Pandas, Matplotlib, Seaborn, SciPy, Numpy, Phik  
-**SQL:** PostgreSQL  
-**BI:** DataLens  
-**Дополнительно:** Excel, Google Sheets, Git
+- **Python:** Pandas, NumPy, Matplotlib, Seaborn, SciPy, Statsmodels, Phik
+- **SQL:** PostgreSQL
+- **BI:** DataLens
+- **Дополнительно:** Excel, Google Sheets, Git
 
 ---
 
